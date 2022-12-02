@@ -7,5 +7,6 @@
 using namespace std;
 
 int getNumber();
+void addStudent(ofstream &outFS, Student newStudent);
 
 #endif // CODE_ETPOO40_HEADER.H

@@ -1,8 +1,15 @@
 #include "etp0040_header.h"
 
-void add_Student(ofstream &outFS){
-    cout << "Fix Me Pls" << endl;
-}
+struct Student{
+    string firstN;
+    string lastN;
+    int studentID;
+    int testsTaken;
+    int* ptr = nullptr;
+    double averageScore;
+};
+
+
 
 void remove_Student(ifstream &inFS){
     int numStudents;
@@ -22,24 +29,16 @@ void remove_Student(ifstream &inFS){
 enum menu {Add = 1, Remove = 2, Display = 3, Search = 4, Results = 5, Quit = 6};
 const int NUM_TESTS = 5;
 
-struct Student{
-    string firstN;
-    string lastN;
-    int studentID;
-    int testsTaken;
-    int *Student = new int (NUM_TESTS);
-    double averageScore;
-};
-
 int main(){
     ifstream inFS;
     ofstream outFS;
+
+    Student newStudent;
 
     int userChoice;
     // print menu out
 
     do{
-    system("clear");
 
     cout <<"1.Add"<<endl<<"2.Remove"<<endl<<"3.Display"<<endl<<
     "4.Search"<<endl<<"5.Results"<<endl<<"6.Quit"<<endl;
@@ -50,8 +49,11 @@ int main(){
     switch(userChoice){
         case Add:
         //call addStudent function
+        add_Student(outFS, newStudent);
             return 0;
         case Remove:
+            remove_Student(inFS);
+
         //call remove_Student
             return 0;
         case Display:
