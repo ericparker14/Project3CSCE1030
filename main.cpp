@@ -1,10 +1,4 @@
-#include <iostream>
-#include <string>
-#include <unistd.h>
-#include <fstream>
-#include "getNumber.cpp"
-using namespace std;
-
+#include "etp0040_header.h"
 
 void add_Student(ofstream &outFS){
     cout << "Fix Me Pls" << endl;
@@ -12,7 +6,8 @@ void add_Student(ofstream &outFS){
 
 void remove_Student(ifstream &inFS){
     int numStudents;
-    numStudents = getNumber("student.dat");
+    numStudents = getNumber();
+    cout << "numStudents = " << numStudents << endl;
     // call getNumber();
     // create dynamic array with Student
     // open student.dat to read

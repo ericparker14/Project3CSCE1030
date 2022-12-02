@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #include "etp0040_header.h"
 int getNumber()
 {
@@ -19,4 +18,3 @@ int getNumber()
     fin.close();
     return(count);
 }
-=======
