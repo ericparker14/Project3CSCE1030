@@ -2,10 +2,26 @@
 #include <string>
 #include <unistd.h>
 #include <fstream>
+#include "getNumber.cpp"
 using namespace std;
 
-void add_Student(ifstream &inFS, ){
-    
+
+void add_Student(ofstream &outFS){
+    cout << "Fix Me Pls" << endl;
+}
+
+void remove_Student(ifstream &inFS){
+    int numStudents;
+    numStudents = getNumber("student.dat");
+    // call getNumber();
+    // create dynamic array with Student
+    // open student.dat to read
+    // read one line at a time store data in array
+    // while reading check if student id matches student id user entered
+    // use bool
+    // copy entire file to the dynamic array whether or not there is a match
+    // close file
+    cout << "Fix Me Pls" << endl;
 }
 
 enum menu {Add = 1, Remove = 2, Display = 3, Search = 4, Results = 5, Quit = 6};
