@@ -1,13 +1,5 @@
 #include "etp0040_header.h"
 
-struct Student{
-    string firstN;
-    string lastN;
-    int studentID;
-    int testsTaken;
-    int* ptr = nullptr;
-    double averageScore;
-};
 
 
 
@@ -33,7 +25,6 @@ int main(){
     ifstream inFS;
     ofstream outFS;
 
-    Student newStudent;
 
     int userChoice;
     // print menu out
@@ -49,7 +40,7 @@ int main(){
     switch(userChoice){
         case Add:
         //call addStudent function
-        add_Student(outFS, newStudent);
+        addStudent(outFS, newStudent);
             return 0;
         case Remove:
             remove_Student(inFS);

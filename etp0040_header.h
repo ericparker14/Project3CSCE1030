@@ -7,6 +7,18 @@
 using namespace std;
 
 int getNumber();
+
+struct Student{
+    string firstN;
+    string lastN;
+    int studentID;
+    int testsTaken;
+    int* ptr = nullptr;
+    double averageScore;
+};
+
+Student newStudent;
+
 void addStudent(ofstream &outFS, Student newStudent);
 
-#endif // CODE_ETPOO40_HEADER.H
+#endif //CODE_ETPOO40_HEADER_H

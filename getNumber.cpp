@@ -1,4 +1,3 @@
-#include "etp0040_header.h"
 int getNumber()
 {
     ifstream fin;

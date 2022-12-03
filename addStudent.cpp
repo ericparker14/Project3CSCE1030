@@ -1,6 +1,4 @@
-#include <etp0040_header.h>
-
-void add_Student(ofstream &outFS, Student newStudent){
+void add_Student(ofstream &outFS, Student &newStudent){
     int testScore;
     // get all info
     cout << "First name:";
@@ -33,11 +31,4 @@ void add_Student(ofstream &outFS, Student newStudent){
         outFS << newStudent.ptr[i] << ",";
     }
     outFS.close();
-
-
-
-
-
-
-
 }
