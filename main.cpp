@@ -1,13 +1,4 @@
 #include "etp0040_header.h"
-#include <iostream>
-#include <fstream>
-#include <string>
-#include <stdio.h>
-#include <stdlib.h>
-#include <sstream>
-#include <iomanip>
-#include <unistd.h>
-
 using namespace std;
 
 
