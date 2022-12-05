@@ -16,9 +16,10 @@ int main(){
     cout << "Enter your choice:";
     cin >> userChoice;
     switch(userChoice){
-        case Add:
+        case Add:{
         //call addStudent function
 		add_Student();
+        }
 	return 0;
         case Remove:
 		int removeStudent;
