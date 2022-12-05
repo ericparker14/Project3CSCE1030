@@ -1,3 +1,5 @@
+#include "etp0040_header.h"
+
 void add_Student(ofstream &outFS, Student &newStudent){
     int testScore;
     // get all info
