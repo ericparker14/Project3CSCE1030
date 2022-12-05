@@ -1,14 +1,4 @@
-#include "ame0205_header.h" //FIXME
-#include <iostream>
-#include <fstream>
-#include <string>
-#include <stdio.h>
-#include <stdlib.h>
-#include <sstream>
-#include <iomanip>
-#include <unistd.h>
-
-
+#include "ame0205_header.h"
 using namespace std;
 
 void add_Student(){
